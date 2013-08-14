@@ -99,7 +99,7 @@ header h2 {
 
 #content-wrapper {
   border-top: solid 1px #fff;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #main-content {
@@ -322,6 +322,14 @@ h5:before {
 #main-content .post_excerpt{
 border-bottom: 2px #ddd solid;
 }/*by doufunao 2013-08-13*/
+
+.post_excerpt .writter{
+font-size: .8em;
+
+}
+.post_excerpt .date{
+font-size: .8em;
+}
 
 h6:before {
   content: "//////";
