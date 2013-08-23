@@ -169,7 +169,7 @@ code, pre {
 code {
   background-color: #f2f8fc;
   border: solid 1px #dbe7f3;
-  padding: 0 3px;
+  padding: 5px 10px;
 }
 
 pre {
@@ -245,7 +245,7 @@ font-weight: normal;
 
 #main-content h1 {
   font-family: Helvetica, Arial, serif; /*'Architects Daughter', 'Helvetica Neue', */
-  font-size: 2.8em;
+  font-size: 2em;
   letter-spacing: -1px;
   color: #474747;
 } 
@@ -259,7 +259,7 @@ font-weight: normal;
 
 #main-content h2 {
   font-family: Helvetica, Arial, serif; 
-  font-size: 2.3em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 1em;
   color: #474747;
@@ -274,7 +274,7 @@ font-weight: normal;
 
 #main-content h3 {
   font-family: Helvetica, Arial, serif; 
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
@@ -290,7 +290,7 @@ font-weight: normal;
 
 #main-content h4 {
   font-family: Helvetica, Arial, serif; 
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
   color: #474747;
   margin-bottom: 1em;
@@ -338,6 +338,13 @@ font-size: 1em;
 .post_excerpt p{
   text-indent: 2em;
 }
+#main-content .post_excerpt h2, h3, h4{
+  font-size: 1.3em;
+}
+#main-content .post_excerpt .title{
+  font-size: 2.3em;
+}
+
 .post p{
   text-indent: 2em;
 }

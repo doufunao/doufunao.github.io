@@ -23,9 +23,30 @@
 
 
 	<div class="post_excerpt">
-		<h2><a href="/tutorials/2013/08/21/Tutorials-for-Jekyll-in-Windows.html">如何在Windows 7下进行Jekyll本地调试</a></h2>
+		<h2 class="title"><a href="/question/jekyll/2013/08/23/Question-in-Install-Jekyll.html">在本地安装Jekyll时遇到的几点问题</a></h2>
 
-		<h4 id='id10'>目录</h4>
+		<p>遇到的问题做个记录~</p>
+
+<h2 id='1_configymljekyll_serve'>1.每修改一次_config.yml文件都要重新运行jekyll serve一次</h2>
+
+<p>为了实现分页的功能，需要在_config.yml里设置paginate的值，比如</p>
+
+<pre><code>paginate: 10</code></pre>
+
+<p>表示每页显示十个post</p>
+
+<h2 id='2paginatorindexhtml'>2.paginator这个参数只能在index.html里调用</h2>
+
+<p>还是为了实现分页功能，整了半天才发现这个问题，其实在jekyllrb.com里已有提示(Tips)。</p>
+
+		<span class="date">23 Aug 2013    <a href="/question/jekyll/2013/08/23/Question-in-Install-Jekyll.html">查看全文</a>
+	</div></span>
+
+
+	<div class="post_excerpt">
+		<h2 class="title"><a href="/tutorials/2013/08/21/Tutorials-for-Jekyll-in-Windows.html">如何在Windows 7下进行Jekyll本地调试</a></h2>
+
+		<h4 id='id2'>目录</h4>
 
 <ul>
 <li><a href='#background'>0 罗罗嗦嗦</a></li>
@@ -64,7 +85,7 @@
 
 
 	<div class="post_excerpt">
-		<h2><a href="/blog/about/2013/08/14/About-the-Blog.html">欢迎来到我的幻想乡</a></h2>
+		<h2 class="title"><a href="/blog/about/2013/08/14/About-the-Blog.html">欢迎来到我的幻想乡</a></h2>
 
 		<p>花了几天时间，终于把Jekyll搞懂了，最终能够浏览，对于咱这个伪技术来说着实不易。</p>
 
