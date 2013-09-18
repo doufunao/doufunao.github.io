@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <title>欢迎来到我的幻想乡 - 豆腐脑的幻想大陆</title>
+    <title>Jekyll本地配置小问题 - 豆腐脑的幻想大陆</title>
 </head>
 <body>
     <header>
@@ -19,20 +19,32 @@
         </div>
     </header>
     <div class="title inner clearfix">
-    <a href="">欢迎来到我的幻想乡</a><br/>
+    <a href="">Jekyll本地配置小问题</a><br/>
  </div>
 
 <div id="content-wrapper">
       <div class="inner clearfix">     
         <section id="main-content">
-            <div class="post"><p>花了几天时间，终于把Jekyll搞懂了，最终能够浏览，对于咱这个伪技术来说着实不易。</p>
+            <div class="post"><p>晚上重装系统到win8，然后果断把Jekyll又配置一遍。 有一步需要将默认的source替换成淘宝的镜像</p>
 
-<p>搭个博客，一来在调bug的过程中自我娱乐，二来分享一些生活学习心得。</p>
+<p>输入</p>
 
-<p>生无所息</p>
+<pre><code>gem sources --remove https://rubygems.org</code></pre>
 
-<p>over</p></div>
-<span class="date">14 Aug 2013</span>
+<p>结果提示我</p>
+
+<pre><code>source https://rubygems.org not present in cache</code></pre>
+
+<p>搜了半天网上也有人出现这个问题，不过解决办法基本上都不靠谱。无意中看到一篇文档记录才发现，原来是少打了一个<code>/</code>。。。泪奔</p>
+
+<p>输入</p>
+
+<pre><code>gem sources --remove https://rubygems.org/</code></pre>
+
+<p>搞定</p>
+
+<p>综上所述：粗心神马的不可取</p></div>
+<span class="date">18 Sep 2013</span>
 <!-- Duoshuo Comment BEGIN -->
     <div class="ds-thread"></div>
 <script type="text/javascript">

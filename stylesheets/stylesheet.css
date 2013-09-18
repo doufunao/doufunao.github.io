@@ -227,7 +227,7 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 .title {
   font-family: Helvetica, Arial, serif; 
-  font-size: 40px;
+  font-size: 2em;
   font-weight: bold;
   color: #474747;
   margin-top: 25px;
@@ -336,17 +336,17 @@ font-size: .8em;
 font-size: 1em;
 }
 .post_excerpt p{
-  text-indent: 2em;
+  /*text-indent: 2em;*/
 }
 #main-content .post_excerpt h2, h3, h4{
   font-size: 1.3em;
 }
 #main-content .post_excerpt .title{
-  font-size: 2.3em;
+  font-size: 1.8em;
 }
 
 .post p{
-  text-indent: 2em;
+ /* text-indent: 2em;*/
 }
 h6:before {
   /*content: "//////";*/
