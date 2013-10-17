@@ -25,70 +25,65 @@
 <div id="content-wrapper">
       <div class="inner clearfix">     
         <section id="main-content">
-            <div class="post"><h4 id='id138'>目录</h4>
+            <div class="post">
+<h4 id="">目录</h4>
 
 <ul>
-<li><a href='#background'>0 罗罗嗦嗦</a></li>
+<li><a href="#background">0 罗罗嗦嗦</a></li>
 
-<li><a href='#preparation'>1 准备</a></li>
+<li><a href="#preparation">1 准备</a></li>
 
-<li><a href='#installation'>2 安装Ruby以及Jekyll</a></li>
+<li><a href="#installation">2 安装Ruby以及Jekyll</a></li>
 
-<li><a href='#initialization'>3 初始化一个网站</a></li>
+<li><a href="#initialization">3 初始化一个网站</a></li>
 
-<li><a href='#running'>4 本地运行</a></li>
+<li><a href="#running">4 本地运行</a></li>
 
-<li><a href='#documents'>5 参考文档</a></li>
+<li><a href="#documents">5 参考文档</a></li>
 </ul>
 
-<h4 id='background'>0 罗罗嗦嗦</h4>
+<h4 id="background">0 罗罗嗦嗦</h4>
 
 <blockquote>
 <p>本文适合Ruby小白，第一次用Jekyll建站，能看Html+CSS的孩纸。</p>
 </blockquote>
 
-<h4 id='preparation'>1 准备</h4>
+<h4 id="preparation">1 准备</h4>
 
 <ul>
 <li>Windows 7 32位 <em>后面下载的两个软件要注意版本，本文给出的链接都是32位的软件</em></li>
 
-<li>RubyInstaller <a href='http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p247.exe?direct'>Ruby 2.0.0-p247</a></li>
+<li>RubyInstaller <a href="http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p247.exe?direct">Ruby 2.0.0-p247</a></li>
 
-<li>Development Kit <a href='http://rubyforge.org/frs/download.php/76805/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe'>DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</a></li>
+<li>Development Kit <a href="http://rubyforge.org/frs/download.php/76805/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe">DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</a></li>
 </ul>
 
-<p>以上两个程序可以到<a href='http://www.rubyinstaller.org/downloads/'>官网</a>下载最新版本</p>
+<p>以上两个程序可以到<a href="http://www.rubyinstaller.org/downloads/">官网</a>下载最新版本</p>
 <!--break-->
-<h4 id='installation'>2 安装Ruby以及Jekyll</h4>
+<h4 id="installation">2 安装Ruby以及Jekyll</h4>
 
-<h5 id='_ruby'>第一步 安装Ruby</h5>
+<h5 id="_ruby">第一步 安装Ruby</h5>
 
 <ul>
-<li>
-<p>运行Ruby 2.0.0-p247.exe，默认路径是C:\Ruby200本文以此为例</p>
-</li>
+<li>运行Ruby 2.0.0-p247.exe，默认路径是C:\Ruby200本文以此为例</li>
 
-<li>
-<p>运行DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe解压到任意文件夹下，本文以C:\DevKit为例</p>
-</li>
+<li>运行DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe解压到任意文件夹下，本文以C:\DevKit为例</li>
 
-<li>
-<p>打开cmd，cd到C:\DevKit,输入</p>
-
+<li>打开cmd，cd到C:\DevKit,输入
 <p><code>ruby dk.rb init</code></p>
 
 <p><code>ruby dk.rb install</code></p>
 
-<p><em>如果第二步的命令都能成功运行，说明安装成功了。</em> <em>如果不成功，可以试一下<a href='http://railsinstaller.org/en'>RailsInstaller</a>，直接运行，无需安装前面两个文件。</em>由于我最先看的文档是Jekyll官方给的参考博客，没有试过这个，目测比我这么折腾方便orz&#8230;</p>
+<p><em>如果第二步的命令都能成功运行，说明安装成功了。</em> <em>如果不成功，可以试一下<a href="http://railsinstaller.org/en">RailsInstaller</a>，直接运行，无需安装前面两个文件。</em>由于我最先看的文档是Jekyll官方给的参考博客，没有试过这个，目测比我这么折腾方便orz</p>
 </li>
 </ul>
 
-<h5 id='_jekyll'>第二步 安装Jekyll</h5>
+<h5 id="_jekyll">第二步 安装Jekyll</h5>
 
 <ul>
-<li>
-<p>打开命令行(cmd)，输入<br /><code>gem sources --remove http://rubygems.org/</code> <br /> <code>gem sources -a http://ruby.taobao.org/</code> <br />上面这个代码的作用是添加国内镜像 - 运行上面的代码提示成功后，继续输入<br /><code>gem install jekyll</code></p>
+<li>打开命令行(cmd)，输入<br /><code>gem sources --remove http://rubygems.org/</code> <br /> <code>gem sources -a http://ruby.taobao.org/</code> <br />上面这个代码的作用是添加国内镜像</li>
 
+<li>运行上面的代码提示成功后，继续输入<br /><code>gem install jekyll</code>
 <blockquote>
 <p>基本上上面的步骤完成后就没啥问题了。不放心再安装个rdiscount<br /><code>gem install rdiscount</code></p>
 </blockquote>
@@ -101,7 +96,7 @@
 
 <p>(到了这里，就算Jekyll安装完成了。)</p>
 
-<h4 id='initialization'>3 初始化一个网站</h4>
+<h4 id="initialization">3 初始化一个网站</h4>
 
 <ul>
 <li>在你中意的硬盘下建立一个空文件夹，这个空文件夹以后就是网站的根目录。本文以D:\MyBlog为例</li>
@@ -114,7 +109,7 @@
 |-- _layouts  
 |-- _posts
 |-- _config.yml</code></pre>
-<h4 id='running'>4 本地运行</h4>
+<h4 id="running">4 本地运行</h4>
 
 <p>用记事本新建一个文件，输入<code>&quot;Hello,MyBlog&quot;</code>，保存在D:\MyBlog下，文件名命名为index.html，<em>注意保存的时候文件类型选择<code>&quot;全部文件&quot;</code></em>. 打开命令行(cmd)，cd至D:\MyBlog目录，在当前目录下输入</p>
 
@@ -132,21 +127,12 @@
 
 <p>便可以看到你的Hello,MyBlog了~</p>
 
-<h4 id='documents'>5 参考文档</h4>
+<h4 id="documents">5 参考文档</h4>
 
-<ol>
-<li><a href='http://jekyllrb.com/'>Jekyllrb.com</a>：应该是官方文档吧，看的最多，关于配置和参数的一些问题都可以在这里找到答案。</li>
+<p>1.<a href="http://jekyllrb.com/">Jekyllrb.com</a>：应该是官方文档吧，看的最多，关于配置和参数的一些问题都可以在这里找到答案。 2.<a href="http://yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/">Github Pages极简教程</a>：简单易懂，解释很清楚，与网站相关的模块也有说。 3.<a href="http://markdingst.blogspot.com/2013/06/how-to-install-jekyii-under.html">How to install JekyII under windows</a>：清晰 4.<a href="http://wowubuntu.com/markdown/">Markdown语法说明</a>：学习Markdown语法必看，不解释。 5.<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">搭建一个免费的，无限流量的Blog—-github Pages和Jekyll入门</a>：图文并茂。作者的示例是在项目里建网站，项目的wiki page？</p>
 
-<li><a href='http://yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/'>Github Pages极简教程</a>：简单易懂，解释很清楚，与网站相关的模块也有说。</li>
-
-<li><a href='http://markdingst.blogspot.com/2013/06/how-to-install-jekyii-under.html'>How to install JekyII under windows</a>：清晰</li>
-
-<li><a href='http://wowubuntu.com/markdown/'>Markdown语法说明</a>：学习Markdown语法必看，不解释。</li>
-
-<li><a href='http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html'>搭建一个免费的，无限流量的Blog&#8212;-github Pages和Jekyll入门</a>：图文并茂。作者的示例是在项目里建网站，项目的wiki page？</li>
-</ol>
-
-<p>在安装的过程中，发现了N多问题，有些已解决有些未解决，总的来说还算顺利。貌似Jekyll是在近两年兴起，常见问题都可以百度谷歌解决，遇到问题再说吧。</p></div>
+<p>在安装的过程中，发现了N多问题，有些已解决有些未解决，总的来说还算顺利。貌似Jekyll是在近两年兴起，常见问题都可以百度谷歌解决，遇到问题再说吧。</p>
+</div>
 <span class="date">21 Aug 2013</span>
 <!-- Duoshuo Comment BEGIN -->
     <div class="ds-thread"></div>
