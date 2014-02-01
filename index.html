@@ -23,6 +23,34 @@
 
 
 	<div class="post_excerpt">
+		<h2 class="title"><a href="/2014/02/01/How-to-Install-Easy_install.html">Windows上安装easy_install</a></h2>
+
+		
+<p>第一步，在官网下载<a href="https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py">ez_setup.py</a>文件<a href="https://pypi.python.org/pypi/setuptools#downloads">https://pypi.python.org/pypi/setuptools#downloads</a>，在命令行cmd里编译执行ez_setup.py</p>
+
+<pre><code>&gt;python ez_setup.py</code></pre>
+
+<p>第二步，在环境变量path里增加个路径</p>
+
+<pre><code>C:\python33\scripts</code></pre>
+
+<p>第三步，利用easy_install安装BeautifulSoup4。在命令行cmd里输入</p>
+
+<pre><code>&gt;easy_install beautifulsoup4</code></pre>
+
+<p>参考链接：</p>
+
+<ol>
+<li><a href="http://www.cnblogs.com/huangjacky/archive/2012/03/28/2421866.html">python-easy_install的安装和使用</a></li>
+
+<li><a href="https://pypi.python.org/pypi/setuptools#downloads">setuptool官网</a></li>
+</ol>
+
+		<span class="date">01 Feb 2014    <a href="/2014/02/01/How-to-Install-Easy_install.html">查看全文</a>
+	</div></span>
+
+
+	<div class="post_excerpt">
 		<h2 class="title"><a href="/2013/11/29/Fate.html">宿命</a></h2>
 
 		
@@ -109,28 +137,6 @@
 </ul>
 
 		<span class="date">07 Sep 2013    <a href="/method/guide/2013/09/07/How-to-browser-the-start-file.html">查看全文</a>
-	</div></span>
-
-
-	<div class="post_excerpt">
-		<h2 class="title"><a href="/question/jekyll/2013/08/23/Question-in-Install-Jekyll.html">在本地安装Jekyll时遇到的几点问题</a></h2>
-
-		
-<p>遇到的问题做个记录~</p>
-
-<h2 id="1_configymljekyll_serve">1.每修改一次_config.yml文件都要重新运行jekyll serve一次</h2>
-
-<p>为了实现分页的功能，需要在_config.yml里设置paginate的值，比如</p>
-
-<pre><code>paginate: 10</code></pre>
-
-<p>表示每页显示十个post</p>
-
-<h2 id="2paginatorindexhtml">2.paginator这个参数只能在index.html里调用</h2>
-
-<p>还是为了实现分页功能，整了半天才发现这个问题，其实在jekyllrb.com里已有提示(Tips)。</p>
-
-		<span class="date">23 Aug 2013    <a href="/question/jekyll/2013/08/23/Question-in-Install-Jekyll.html">查看全文</a>
 	</div></span>
 
 <!-- Pagination links-->
