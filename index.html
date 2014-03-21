@@ -14,12 +14,66 @@
     <header>
         <div class="inner">
             <h1><a href="/">豆腐脑的幻想乡</a></h1>
-            <h2>Always Mining</h2>
+            <h2>Future, Love & Happiness</h2>
         </div>
     </header>
 <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+
+
+	<div class="post_excerpt">
+		<h2 class="title"><a href="/python/tech/crawler/2014/03/21/python3-encode-problem-under-windows-cmd.html">python3在windows下f.write()方法编码问题</a></h2>
+
+		
+<p>之前由于windows下的编码问题，转用unbutu系统。 今天由于必须使用windows server运行程序，又开始尝试解决编码问题。</p>
+
+<h2 id="">报错提示：</h2>
+
+<pre><code>UnicodeEncodeError: &#39;gbk&#39; codec can&#39;t encode character &#39;\xa0&#39; in position 967: 
+illegal multibyte sequence</code></pre>
+
+<h2 id="_2">出错代码：</h2>
+
+<pre><code>1 request = urllib.request.Request(urlstr)
+2 fp = urllib.request.urlopen(request)
+3 content = fp.read()
+4 c = content.decode(&#39;utf-8&#39;)
+5 f = open(&#39;test&#39;, &#39;w&#39;)
+6 f.write(c)</code></pre>
+
+<blockquote>
+<p>报错代码为第6行</p>
+
+<p>代码仅为示意</p>
+</blockquote>
+
+
+		<span class="date">
+      
+      BITlab&nbsp;&nbsp;
+      
+      21 Mar 2014&nbsp;&nbsp;<a href="/python/tech/crawler/2014/03/21/python3-encode-problem-under-windows-cmd.html">查看全文</a>
+	</div></span>
+
+
+	<div class="post_excerpt">
+		<h2 class="title"><a href="/2014/02/07/Add-Post-Url-in-the-Blog.html">Jekyll添加内部链接</a></h2>
+
+		
+<p>问题：在文章中直接添加另一篇文章的链接</p>
+
+<p>描述：</p>
+
+<p>由于在markdown里加入链接的时候，由于文章链接是由jekyll生成的，所以无法获知post的相对路径。(虽然根据规则可以推断出，但是万一以后规则改变或者某些变量被修改了，原先写好的路径就会失效)</p>
+
+
+		<span class="date">
+      
+      家&nbsp;&nbsp;
+      
+      07 Feb 2014&nbsp;&nbsp;<a href="/2014/02/07/Add-Post-Url-in-the-Blog.html">查看全文</a>
+	</div></span>
 
 
 	<div class="post_excerpt">
@@ -49,7 +103,7 @@ layout: post</code></pre>
 
 		<span class="date">
       
-      于武威老家&nbsp;&nbsp;
+      武威老家&nbsp;&nbsp;
       
       04 Feb 2014&nbsp;&nbsp;<a href="/tutorials/notes/2014/02/04/Add-the-Location-Field-for-a-Post.html">查看全文</a>
 	</div></span>
@@ -66,7 +120,7 @@ layout: post</code></pre>
 
 		<span class="date">
       
-      于武威老家&nbsp;&nbsp;
+      武威老家&nbsp;&nbsp;
       
       01 Feb 2014&nbsp;&nbsp;<a href="/tutorials/notes/2014/02/01/How-to-Install-Easy_install.html">查看全文</a>
 	</div></span>
@@ -89,61 +143,9 @@ layout: post</code></pre>
 
 		<span class="date">
       
-      于武威老家&nbsp;&nbsp;
+      武威老家&nbsp;&nbsp;
       
       26 Jan 2014&nbsp;&nbsp;<a href="/notes/2014/01/26/That-Things.html">查看全文</a>
-	</div></span>
-
-
-	<div class="post_excerpt">
-		<h2 class="title"><a href="/2013/11/29/Fate.html">宿命</a></h2>
-
-		
-<p>一个月写一次博客的命么。。。orz</p>
-
-<p>这一个月浑浑噩噩的，开题终于到了尾声，虽然老板还是如此想我，恨不得天天见到我，让我给她写论文。</p>
-
-<h2 id="or">期待or等待？</h2>
-
-<p>今天从某某所回来的路上，突然特别想听歌，没有耳机，就把手机举到耳边，听着小音量的公放。歌曲是宇田多光的《Prisoner of Love》。应该算是一首老歌了吧，印象中好几年前就开始听，听到现在都没腻。然后觉得特别奇怪，为什么喜欢这首歌，每次都有一种能听懂的感觉，但是日文神马的真的是不懂，也没有查过歌词，所以从来都不知道这首歌在唱神马，所以越发地有一种期待，是不是唱得就是我听歌的心情？</p>
-
-
-		<span class="date">
-      
-      于幻想乡&nbsp;&nbsp;
-      
-      29 Nov 2013&nbsp;&nbsp;<a href="/2013/11/29/Fate.html">查看全文</a>
-	</div></span>
-
-
-	<div class="post_excerpt">
-		<h2 class="title"><a href="/axure/tech%20study/requirements%20analysis/2013/10/14/How-to-make-a-droplist-in-Axure.html">Axure使用小体会及实现下拉菜单效果</a></h2>
-
-		
-<p>目录</p>
-
-<ul>
-<li><a href="#t0">0 每次都要啰嗦一下</a></li>
-
-<li><a href="#t1">1 Axure使用体会</a></li>
-
-<li><a href="#t2">2 利用动态面板(Dynamic Panel)实现下拉菜单(Droplist)效果</a></li>
-
-<li><a href="#t3">3 效果展示</a></li>
-
-<li><a href="#t4">4 后记</a></li>
-</ul>
-
-<h3 id="t0">0 每次都要啰嗦一下</h3>
-
-<p>为了给boss完成任务，最近一直在用Axure做原型（虽然一直被一些骚年吐槽叫画界面233），两个月前一点没接触过，现在也算是有点小心得了，遂记之。</p>
-
-
-		<span class="date">
-      
-      于幻想乡&nbsp;&nbsp;
-      
-      14 Oct 2013&nbsp;&nbsp;<a href="/axure/tech%20study/requirements%20analysis/2013/10/14/How-to-make-a-droplist-in-Axure.html">查看全文</a>
 	</div></span>
 
 <!-- Pagination links-->

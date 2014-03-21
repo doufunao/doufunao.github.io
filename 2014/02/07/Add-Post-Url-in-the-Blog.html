@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <title>About doufunao - 豆腐脑的幻想大陆</title>
+    <title>Jekyll添加内部链接 - 豆腐脑的幻想大陆</title>
 </head>
 <body>
     <header>
@@ -18,17 +18,41 @@
         </div>
     </header>
     <div class="title inner clearfix">
-    <a href="">About doufunao</a><br/>
+    <a href="">Jekyll添加内部链接</a><br/>
  </div>
 
 <div id="content-wrapper">
       <div class="inner clearfix">     
         <section id="main-content">
-            <div class="post"></div></br>
+            <div class="post">
+<p>问题：在文章中直接添加另一篇文章的链接</p>
+
+<p>描述：</p>
+
+<p>由于在markdown里加入链接的时候，由于文章链接是由jekyll生成的，所以无法获知post的相对路径。(虽然根据规则可以推断出，但是万一以后规则改变或者某些变量被修改了，原先写好的路径就会失效)</p>
+<!--break-->
+<p>在网上搜了一下，解决办法还是很简单的，在需要插入链接的地方写上。</p>
+<pre><code>&#123;% post_url 2014-02-04-Add-the-Location-Field-for-a-Post %&#125;</code></pre>
+<p>格式：</p>
+
+<pre><code>post_url 文件名</code></pre>
+
+<blockquote>
+<p>注意：大小写</p>
+</blockquote>
+
+<p>PS.<code>{</code>和<code>%</code>没有办法连在一起显示，最后还是直接写html实现的。</p>
+
+<pre><code>&lt;pre&gt;&lt;code&gt;&amp;#123;% post_url 2014-02-04-Add-the-Location-Field-for-a-Post %&amp;#125;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>其中，<code>&amp;#123;</code>和<code>&amp;#125;</code>分别表示<code>{</code>和<code>}</code></p>
+
+<p>来源：<a href="http://www.v2ex.com/t/93507">github page (Jekyll) 的一些问题</a></p>
+</div></br>
             
-            <span class="location">幻想乡</span></br>
+            <span class="location">家</span></br>
             
-            <span class="date">01 Jan 2013</span>
+            <span class="date">07 Feb 2014</span>
 <!-- Duoshuo Comment BEGIN -->
     <div class="ds-thread"></div>
 <script type="text/javascript">

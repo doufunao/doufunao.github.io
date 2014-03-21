@@ -168,12 +168,15 @@ code, pre {
 
 code {
   background-color: #f2f8fc;
-  border: solid 1px #dbe7f3;
+  /*border: solid 1px #dbe7f3;*/
+  border: solid 1px #5577AA;
   padding: 5px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 pre {
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   text-shadow: none;
   overflow: auto;
@@ -184,6 +187,7 @@ pre code {
   background-color: #fff;
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 ul, ol, dl {
@@ -222,7 +226,11 @@ form {
   padding: 20px;
   
 }
-
+strong{
+  font-weight: bold;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 
 /* GENERAL ELEMENT TYPE STYLES */
 .title {
